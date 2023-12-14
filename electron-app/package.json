@@ -1,0 +1,23 @@
+{
+  "name": "app-name",
+  "version": "1.0.0",
+  "main": "./src/electron.js",
+  "build": {
+    "appId": "com.yourcompany.yourapp",
+    "productName": "app-name",
+    "directories": {
+      "output": "../dist/electron-app"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "scripts": {
+    "start": "cd ../react-app && npm run build && cd ../electron-app && electron src/electron.js",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0"
+  }
+}
