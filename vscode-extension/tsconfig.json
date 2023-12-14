@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "Node16",
+		"target": "ES2022",
+		"outDir": "../dist/vscode-extension",
+		"lib": [
+			"ES2022"
+		],
+		"sourceMap": true,
+		"strict": true,
+		"baseUrl": "./src",
+    "paths": {
+      "@shared-core/*": ["../../shared-core/*"],
+    }
+	},
+	"include": [
+    "src",
+    "../shared-core/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
