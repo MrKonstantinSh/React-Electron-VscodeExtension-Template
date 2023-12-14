@@ -1,5 +1,5 @@
 {
-  "name": "app-name",
+  "name": "electron-app",
   "version": "1.0.0",
   "main": "./src/electron.js",
   "build": {
